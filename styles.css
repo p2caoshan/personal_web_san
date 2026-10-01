@@ -161,9 +161,9 @@ h1 {
 
 .download:hover { border-color: var(--accent); }
 
-.mast { background: rgba(243, 215, 168, 0.72); }
+.mast { background: rgba(239, 223, 196, 0.72); }
 
-main { background: rgba(243, 215, 168, 0.92); }
+main { background: rgba(239, 223, 196, 0.92); }
 
 .mast { padding: 16px 16px 20px; }
 
