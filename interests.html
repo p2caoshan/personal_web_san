@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shan Cao — Interests</title>
+  <meta name="description" content="Shan Cao paints and street dances: very quiet, and also very sporty." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#paintings" data-i18n="skip">Skip to the paintings</a>
+  <div class="page">
+    <header class="mast">
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" id="lang-en" class="is-on" aria-pressed="true">EN</button>
+        <button type="button" id="lang-fr" aria-pressed="false">FR</button>
+      </div>
+      <p class="kicker" data-i18n="kicker">Paris · Data scientist</p>
+      <h1><a href="index.html">Shan Cao</a></h1>
+      <p class="aka">San</p>
+      <p class="lede" data-i18n="lede">Data scientist with 8+ years of experience and training from top-tier business and engineering schools. Brings true full-stack expertise across both applications and data: from backend modeling and frontend product development to data engineering, data science, and advanced analytics.</p>
+      <nav class="nav" aria-label="Page">
+        <a href="index.html#work" data-i18n="nav-work">Work</a>
+        <a href="index.html#education" data-i18n="nav-edu">Education</a>
+        <a href="index.html#practice" data-i18n="nav-practice">Practice</a>
+        <a href="index.html#projects" data-i18n="nav-projects">Projects</a>
+        <a href="interests.html" data-i18n="nav-interests" aria-current="page">Interests</a>
+        <a href="index.html#contact" data-i18n="nav-contact">Contact</a>
+      </nav>
+      <p class="mast-links">
+        <a href="mailto:p2caoshan@163.com">p2caoshan@163.com</a><br />
+        <a href="https://www.linkedin.com/in/san-cao" target="_blank" rel="noopener">linkedin.com/in/san-cao</a>
+      </p>
+      <a class="download" id="download" href="ShanCAO_DataScientist_EN.pdf" download>Download resume (PDF)</a>
+    </header>
+
+    <main id="paintings">
+      <p class="interests-lead" data-i18n="lead">I love painting and street dance. Painting is the very quiet version. Street dance is the very sporty one. Both are me, just not at the same time.</p>
+
+      <figure class="painting">
+        <img src="images/portrait.jpg" alt="Colored drawing of a person with eyes closed, a dragonfly resting across the face, and a pale floral shirt." />
+        <figcaption>
+          <h2 data-i18n="quiet-title">Quiet mode</h2>
+          <p data-i18n="quiet-caption">Eyes closed, and a dragonfly that never learned personal space. This is as still as I get. The dance shoes are in another room, and they know better than to interrupt.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="painting">
+        <img src="images/cat.jpg" alt="Graphite drawing of a black cat with yellow eyes, looking off to the side, dated February 2020." />
+        <figcaption>
+          <h2 data-i18n="sport-title">Sporty mode</h2>
+          <p data-i18n="sport-caption">My cat.</p>
+        </figcaption>
+      </figure>
+      <p class="credit"><span data-i18n="credit">Background drawing: Leonardo da Vinci, Vitruvian Man. Photograph by Luc Viatour.</span> <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></p>
+    </main>
+  </div>
+  <script>
+    const copy = {
+      en: {
+        kicker: "Paris · Data scientist",
+        lede: "Data scientist with 8+ years of experience and training from top-tier business and engineering schools. Brings true full-stack expertise across both applications and data: from backend modeling and frontend product development to data engineering, data science, and advanced analytics.",
+        "nav-work": "Work", "nav-edu": "Education", "nav-practice": "Practice", "nav-projects": "Projects", "nav-interests": "Interests", "nav-contact": "Contact",
+        download: "Download resume (PDF)",
+        pdfHref: "ShanCAO_DataScientist_EN.pdf",
+        skip: "Skip to the paintings",
+        lead: "I love painting and street dance. Painting is the very quiet version. Street dance is the very sporty one. Both are me, just not at the same time.",
+        "quiet-title": "Quiet mode",
+        "quiet-caption": "Eyes closed, and a dragonfly that never learned personal space. This is as still as I get. The dance shoes are in another room, and they know better than to interrupt.",
+        "sport-title": "Sporty mode",
+        "sport-caption": "My cat.",
+        credit: "Background drawing: Leonardo da Vinci, Vitruvian Man. Photograph by Luc Viatour.",
+        title: "Shan Cao — Interests"
+      },
+      fr: {
+        kicker: "Paris · Data scientist",
+        lede: "Data scientist, plus de huit ans d'expérience et une formation dans des écoles de commerce et d'ingénieurs de premier plan. Une vraie expertise full stack, côté applications et côté données : de la modélisation backend et du développement produit frontend au data engineering, à la data science et à l'analytics avancé.",
+        "nav-work": "Expérience", "nav-edu": "Formation", "nav-practice": "Pratique", "nav-projects": "Projets", "nav-interests": "Loisirs", "nav-contact": "Contact",
+        download: "Télécharger le CV (PDF)",
+        pdfHref: "ShanCAO_DataScientist_FR.pdf",
+        skip: "Aller aux peintures",
+        lead: "J'aime la peinture et la danse urbaine. La peinture, c'est la version très calme. La danse, c'est la version qui bouge. Les deux, c'est moi, jamais en même temps.",
+        "quiet-title": "Mode silencieux",
+        "quiet-caption": "Les yeux fermés, et une libellule qui n'a jamais compris l'espace personnel. C'est le plus immobile que je sache être. Les baskets de danse sont dans une autre pièce, et elles ont compris qu'il ne fallait pas déranger.",
+        "sport-title": "Mode sportif",
+        "sport-caption": "Mon chat.",
+        credit: "Dessin de fond : Léonard de Vinci, l'Homme de Vitruve. Photographie de Luc Viatour.",
+        title: "Shan Cao — Loisirs"
+      }
+    };
+
+    let lang = "en";
+    const langButtons = { en: document.getElementById("lang-en"), fr: document.getElementById("lang-fr") };
+
+    function apply(next) {
+      lang = next;
+      const pack = copy[lang];
+      document.documentElement.lang = lang === "fr" ? "fr" : "en";
+      document.title = pack.title;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.dataset.i18n;
+        if (pack[key] != null) el.textContent = pack[key];
+      });
+      const download = document.getElementById("download");
+      download.textContent = pack.download;
+      download.href = pack.pdfHref;
+      langButtons.en.classList.toggle("is-on", lang === "en");
+      langButtons.fr.classList.toggle("is-on", lang === "fr");
+      langButtons.en.setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+      langButtons.fr.setAttribute("aria-pressed", lang === "fr" ? "true" : "false");
+      try { localStorage.setItem("site-lang", lang); } catch (err) {}
+    }
+
+    langButtons.en.addEventListener("click", () => apply("en"));
+    langButtons.fr.addEventListener("click", () => apply("fr"));
+    try {
+      const saved = localStorage.getItem("site-lang");
+      if (saved === "fr") apply("fr");
+    } catch (err) {}
+  </script>
+</body>
+</html>
