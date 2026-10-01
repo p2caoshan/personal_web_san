@@ -161,7 +161,7 @@ h1 {
 
 .download:hover { border-color: var(--accent); }
 
-.mast { background: rgba(243, 215, 168, 0.78); }
+.mast { background: rgba(243, 215, 168, 0.72); }
 
 main { background: rgba(243, 215, 168, 0.92); }
 
@@ -199,9 +199,7 @@ main { padding: 8px 22px 12px; }
 }
 
 .plate {
-  margin: 0 0 28px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid var(--line);
+  margin: 18px 0 0;
 }
 
 .plate svg {
@@ -314,6 +312,8 @@ h2 {
 }
 
 .role li + li { margin-top: 6px; }
+
+#work > h2 { margin-bottom: 4px; }
 
 #education,
 #practice,
